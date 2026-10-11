@@ -1,0 +1,118 @@
+/* General Page Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #263238;
+    margin: 0;
+    padding: 30px;
+    line-height: 1.6;
+}
+
+/* Main Headings */
+h1 {
+    color: #1e3a8a;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #2563eb;
+}
+
+/* Paragraphs */
+p {
+    font-size: 16px;
+}
+
+/* Links */
+a {
+    color: #2563eb;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 5px 0;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Forms */
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+/* Task List Items */
+hr {
+    border: 0;
+    border-top: 1px solid #dbe3ef;
+    margin: 25px 0;
+}
+
+h3 {
+    color: #1e40af;
+}
+
+/* Dashboard Buttons */
+body > a {
+    display: inline-block;
+    margin: 8px;
+}
+
+/* Mobile-Friendly Design */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    form {
+        padding: 18px;
+    }
+
+    button {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Management Dashboard</title>
+    <link rel="stylesheet" href="{% static 'tasks/style.css' %}">
+</head>
+<body>
+    <h1>Welcome to Your Dashboard!</h1>
+
+    <p>You have successfully logged in.</p>
+
+    <h2>Task Management Application</h2>
+
+    <p>Welcome! You can manage your tasks here.</p>
+
+    <hr>
+
+    <a href="{% url 'task_list' %}">
+        <button type="button">View My Tasks</button>
+    </a>
+
+    <a href="{% url 'add_task' %}">
+        <button type="button">Add New Task</button>
+    </a>
+    <br><br>
+    <a href="{% url 'logout' %}">
+    <button type="button">Logout 🚪</button>
+    </a>
+</body>
+</html>

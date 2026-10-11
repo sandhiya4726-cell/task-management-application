@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="{% static 'tasks/style.css' %}">
+</head>
+<body>
+
+    <h2>Create Account</h2>
+
+    <form method="POST">
+        {% csrf_token %}
+
+        {{ form.as_p }}
+
+        <button type="submit">Register</button>
+        <p>Already have an account? <a href="{% url 'login' %}">Login here</a></p>
+    </form>
+
+    <p>
+        Already have an account?
+        <p>Already have an account? Login will be added next.</p>
+    </p>
+
+</body>
+</html>
